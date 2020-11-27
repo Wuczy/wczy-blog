@@ -9,10 +9,7 @@ import com.site.blog.my.core.pojo.BlogCategory;
 import com.site.blog.my.core.pojo.BlogTag;
 import com.site.blog.my.core.pojo.BlogTagRelation;
 import com.site.blog.my.core.service.BlogService;
-import com.site.blog.my.core.util.MarkDownUtil;
-import com.site.blog.my.core.util.PageQueryUtil;
-import com.site.blog.my.core.util.PageResult;
-import com.site.blog.my.core.util.PatternUtil;
+import com.site.blog.my.core.util.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -321,7 +318,7 @@ public class BlogServiceImpl implements BlogService {
             blogMapper.updateByPrimaryKey(blog);
             BlogDetailVO blogDetailVO = new BlogDetailVO();
             BeanUtils.copyProperties(blog, blogDetailVO);
-            blogDetailVO.setBlogContent(MarkDownUtil.mdToHtml(blogDetailVO.getBlogContent()));
+            blogDetailVO.setBlogContent(MarkDownUtil.markdownToHtmlExtensions(blogDetailVO.getBlogContent()));
             BlogCategory blogCategory = categoryMapper.selectByPrimaryKey(blog.getBlogCategoryId());
             if (blogCategory == null) {
                 blogCategory = new BlogCategory();
