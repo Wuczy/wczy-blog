@@ -22,23 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e62f3b8-17fd-4fa0-8954-086470896e88" name="Default Changelist" comment="wczy blog Version1.0">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atlassian_commonmark_commonmark_ext_heading_anchor_0_13_1.xml" afterDir="false" />
+    <list default="true" id="3e62f3b8-17fd-4fa0-8954-086470896e88" name="Default Changelist" comment="wczy blog Version2.0 实现markdown页内跳转">
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/coverUpload/bj1.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/coverUpload/jdbc.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/coverUpload/logowcz.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/markdownUpload/aaa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_atlassian_commonmark_commonmark_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atlassian_commonmark_commonmark_0_13_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_atlassian_commonmark_commonmark_ext_gfm_tables_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atlassian_commonmark_commonmark_ext_gfm_tables_0_13_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/MyBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/MyBlogApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/controller/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/controller/admin/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/util/MarkDownUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/util/MarkDownUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/util/MyBlogUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/site/blog/my/core/util/MyBlogUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/plugins/comment/valid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/plugins/comment/valid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/amaze/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/amaze/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/amaze/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/amaze/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/error_400.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error_400.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/error_5xx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error_5xx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/site/blog/my/core/controller/admin/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/site/blog/my/core/controller/admin/BlogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/site/blog/my/core/service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/site/blog/my/core/service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/site/blog/my/core/util/MarkDownUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/site/blog/my/core/util/MarkDownUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,15 +115,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,7 +163,8 @@
       <workItem from="1606200497236" duration="1578000" />
       <workItem from="1606375834656" duration="54000" />
       <workItem from="1606458041653" duration="3068000" />
-      <workItem from="1606461163228" duration="5421000" />
+      <workItem from="1606461163228" duration="5647000" />
+      <workItem from="1606879699308" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="wczy blog Version1.0">
       <created>1605963168368</created>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605963168368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wczy blog Version2.0 实现markdown页内跳转">
+      <created>1606469357093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606469357093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +204,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="wczy blog Version1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="wczy blog Version1.0" />
+    <MESSAGE value="wczy blog Version2.0 实现markdown页内跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="wczy blog Version2.0 实现markdown页内跳转" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="98" key="#Inspections" timestamp="1605852408517">
@@ -238,38 +244,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="640" y="319" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1605961367261" />
-    <state width="1493" height="183" key="GridCell.Tab.0.bottom" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.0.bottom" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.0.center" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.0.center" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.0.left" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.0.left" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.0.right" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.0.right" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.1.bottom" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.1.bottom" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.1.center" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.1.center" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.1.left" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.1.left" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
-    <state width="1493" height="183" key="GridCell.Tab.1.right" timestamp="1606464102469">
+    <state width="1493" height="183" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
+    <state width="1493" height="183" key="GridCell.Tab.1.right" timestamp="1606469424915">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="183" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1606464102469" />
+    <state width="1493" height="183" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1606469424915" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605711064194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -286,10 +292,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606460859044" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1605964204357">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1606469365247">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605964204357" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606469365247" />
     <state x="444" y="144" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1605961454495">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

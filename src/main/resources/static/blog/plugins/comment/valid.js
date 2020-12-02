@@ -32,7 +32,7 @@ function validLength(obj, length) {
  * @returns {boolean}
  */
 function validCN_ENString2_100(str) {
-    var pattern = /^[a-zA-Z0-9-\u4E00-\u9FA5_,， ]{2,100}$/;
+    var pattern = /^[a-zA-Z0-9-\u4E00-\u9FA5_,？?！=·；;<>《》/!。、.， ]{1,5000}$/;
     if (pattern.test(str.trim())) {
         return (true);
     } else {

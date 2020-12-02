@@ -303,7 +303,6 @@ public class BlogController {
             resultMap.put("message", "上传失败！");
             e.printStackTrace();
         }
-        System.out.println(resultMap.get("success"));
         return resultMap;
     }
 
@@ -338,7 +337,8 @@ public class BlogController {
 
             file.transferTo(targetFile);
             Result resultSuccess = ResultGenerator.genSuccessResult();
-            resultSuccess.setData(MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/img/coverUpload" + file.getOriginalFilename());
+            System.out.println(MyBlogUtils.getHost(new URI(request.getRequestURL()+"")));
+            resultSuccess.setData(MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/img/coverUpload/" + file.getOriginalFilename());
             return resultSuccess;
         } catch (IOException e) {
             e.printStackTrace();
